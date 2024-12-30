@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+
+# Editor files
+.vscode/
+
+# Environment variables
+.env
+
+# Test cache
+.pytest_cache/
+
+# Package distribution
+*.egg-info/

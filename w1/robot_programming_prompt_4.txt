@@ -1,0 +1,44 @@
+You are in a 6x4 grid maze (6 columns, 4 rows). Some of these 24 squares are walls that you cannot walk into, you need to safely get to the end of the maze.
+
+Imagine seeing this maze from above, you are able to make steps like: UP, DOWN, RIGHT, LEFT - combination of these should get you to the end of the maze.
+
+Let's assign a number 1-24 to every of the squares in the maze, from left to right and from top to bottom. 
+So: 
+1. the top-left corner (1st column, 1st row) is 1,
+2. the top-right corner (6th column, 1st row) is 6,
+3. the bottom-left corner (1st column, 4th row) is 19, 
+4. the bottom-right corner (6th columnd, 4th row) is 24.
+
+YOUR TASK IS TO GET FROM SQUARE 19 TO SQUARE 24, if possible do it in as few steps as possible.
+
+WALLS (forbidden squares) are on squares 2, 10, 14, 16, 20 - you cannot walk into them!
+
+as an answer: 
+1. between <FIRST_THOUGHTS> think about how the maze is built, where you start, where the end of the maze is and how are the squares in this maze numbered
+2. between <STEPS_THOUGHTS> tags give reasoning behind every step taken as a numbered list, take into account where you are currently and how you can get closer to the end of the maze without walking into a wall
+3. between <RESULT> tags provide a series of steps (using only: UP, DOWN, RIGHT, LEFT) to perform
+
+### EXAMPLE OUTPUT STRUCTURE ###
+
+<FIRST_THOUGHTS>
+recalling basic information about the maze and the goal
+</FIRST_THOUGHTS>
+<STEPS_THOUGHTS>
+list of reasonings behind every step
+</STEPS_THOUGHTS>
+<RESULT>
+{
+ "steps": "steps to perform"
+}
+</RESULT>
+
+### END OF EXAMPLE OUTPUT STRUCTURE ###
+
+
+
+
+------------------------------------------------------------------------------
+
+UP, UP, DOWN, DOWN, LEFT, RIGHT, LEFT, RIGHT, B, A
+
+
