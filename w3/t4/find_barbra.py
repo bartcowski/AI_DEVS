@@ -71,7 +71,7 @@ for i in range(0, 50):
         new_people_json = places_request(place)
         print(f'--- {new_people_json['message']}')
         if new_people_json['code'] == 0 and 'RESTRICTED DATA' not in new_people_json['message']:
-            if 'BARBARA' in new_people_json['message']:
+            if 'BARBARA' in new_people_json['message'] and place not in barbra_locations:
                 barbra_locations.append(place)
             people.update(new_people_json['message'].split(' '))
 
