@@ -1,6 +1,6 @@
 import glob
 import os
-from aidevs_util import send_report
+from aidevs_util import send_report_and_print
 from gpt_util import GptService
 from qdrant_util import QdrantService
 from w3.t2.weapon_report import WeaponReportChunk
@@ -51,4 +51,4 @@ report_date = result[0]['report_date']
 
 print(f'QDRANT RESULT: {report_date}')
 
-send_report('wektory', report_date)
+send_report_and_print('wektory', report_date)

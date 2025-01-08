@@ -2,7 +2,7 @@ import unicodedata
 import requests
 import os
 from bs4 import BeautifulSoup
-from aidevs_util import people_request, places_request, send_report
+from aidevs_util import people_request, places_request, send_report_and_print
 from gpt_util import GptService
 
 ### HANDLE THE NOTE AND EXTRACT INITIAL NAMES
@@ -82,4 +82,4 @@ for i in range(0, 50):
     print(f'places = {places}')
 
 print(f'BARBRA LOCATIONS: {barbra_locations}')
-send_report('loop', barbra_locations[-1])
+send_report_and_print('loop', barbra_locations[-1])

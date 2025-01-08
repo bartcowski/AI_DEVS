@@ -1,4 +1,4 @@
-from aidevs_util import send_report, database_request
+from aidevs_util import send_report_and_print, database_request
 from gpt_util import GptService
 
 # --- AI_DEVS DB MANUAL TESTS ---
@@ -51,4 +51,4 @@ print(query_from_gpt)
 dc_ids_resp = database_request('database', query_from_gpt)
 arr = [x['dc_id'] for x in dc_ids_resp['reply']]
 print(arr)
-send_report('database', arr)
+send_report_and_print('database', arr)

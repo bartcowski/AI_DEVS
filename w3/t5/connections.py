@@ -1,4 +1,4 @@
-from aidevs_util import send_report, database_request
+from aidevs_util import send_report_and_print, database_request
 from neo4j_util import Neo4jService
 
 neo4j = Neo4jService()
@@ -25,4 +25,4 @@ if neo4j.count_nodes() == 0:
 
 path = neo4j.run_shortestpath_Rafal_Barbara_query()
 print(f'\nFINAL PATH: {path}')
-send_report('connections', path)
+send_report_and_print('connections', path)

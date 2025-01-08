@@ -7,7 +7,7 @@ import openai
 import base64
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from aidevs_util import send_report
+from aidevs_util import send_report_and_print
 from gpt_util import GptService
 from qdrant_util import QdrantService
 from w3.t2.weapon_report import WeaponReportChunk
